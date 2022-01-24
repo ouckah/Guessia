@@ -1,0 +1,45 @@
+# --------------------------------------------------------------------------------------- #
+
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [Unreleased] - Guessia
+
+## Date Created - 2022-01-17
+
+# --------------------------------------------------------------------------------------- #
+
+## FORMAT - [Version (1.69.8)] - Date (69-69-69)
+### Added
+- Stuff
+
+### Changed
+- Garbage code
+
+### Removed
+- More garbage code
+
+# --------------------------------------------------------------------------------------- #
+
+## [0.0.1] - 2022-01-24
+### Added
+- WebGL Compatibility
+    - Application.streamingAssetsPath in Game Manager determines desktop or web 
+      browser application
+    - When web browser application opened wordList refers to Resources folder 
+      rather than referencing Text Asset file for desktop application
+- Resources Folder (Located in "Assets/Resources")
+- Public words string array variable in Game Manager that stores an array of all
+  words located in Resources or Text Assets
+- A changelog (fucking finally... a week later)
+
+### Removed
+- Input Handler variable dependability on string path
+- wordList_path variable in Game Manager
+
+### Changed
+- Input Handler wordList now references Game Manager rather than Text Asset file
+
+# --------------------------------------------------------------------------------------- #

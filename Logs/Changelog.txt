@@ -17,13 +17,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 - Garbage code
-
+ 
 ### Removed
 - More garbage code
 
 # --------------------------------------------------------------------------------------- #
 
-## [0.0.1] - 2022-01-24
+## [0.0.1] - 2022-01-23
 ### Added
 - WebGL Compatibility
     - Application.streamingAssetsPath in Game Manager determines desktop or web 
@@ -43,3 +43,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Input Handler wordList now references Game Manager rather than Text Asset file
 
 # --------------------------------------------------------------------------------------- #
+
+## [0.0.1] - 2022-01-24
+### Added
+- Discontinuation of the game after word is guessed
+- Debugger (Toggleable Console GUI)
+
+### Changed
+- Color scheme (more pastel colors)
+- Doubled keyboard key width
+- Reduced size of "Recommence" button
+
+# --------------------------------------------------------------------------------------- #
+
+## [0.0.1] - 2022-01-25
+### Changed
+- Allowed for the "ENTER" input to recieve '\n' and '\r' (for macOS)
+- Fixed reading text file bug that read an extra character in Game Manager hiddenWord
+  variable
+    - Now checks to see if hiddenWord contains guess
+

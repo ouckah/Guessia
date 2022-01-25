@@ -33,23 +33,20 @@ public class GameManager : MonoBehaviour
             if (isWebGl)
             {
                 Debug.Log("Website Application Opened.");
-
-                TextAsset wordListText = Resources.Load<TextAsset>("Text/WordList");
-
-                words = TextAssetToList(wordListText, wordList_LENGTH);
             }
             else
             {
                 Debug.Log("Desktop Application Opened.");
-
-                string wordList = "Assets/Scripts/Databases/WordList.txt";
-                words = GetLine(wordList, wordList_LENGTH);
             }
         }
         catch
         {
 
         }
+
+        TextAsset wordListText = Resources.Load<TextAsset>("Text/WordList");
+
+        words = TextAssetToList(wordListText, wordList_LENGTH);
 
         NewWord(words);
         Debug.Log(hiddenWord);
@@ -59,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (string guess in guesses)
         {
-            if (guess == hiddenWord)
+            if (hiddenWord.Contains(guess))
             {
                 Win();
             }

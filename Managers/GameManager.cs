@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
     {
         TextReader tr = new StreamReader(fileName);
 
-        int NumberOfLines = length;
+        int NumberOfLines = length - 1;
         string[] ListLines = new string[NumberOfLines];
 
         for (int i = 1; i < NumberOfLines; i++)

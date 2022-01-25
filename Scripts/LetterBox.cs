@@ -14,12 +14,12 @@ public class LetterBox : MonoBehaviour
     public int slotNum;
     public Image slotImage;
 
-    public Color32 defaultGray = new Color32(58, 58, 60, 255);
-    public Color32 fadedGray = new Color32(58, 58, 60, 100);
-    public Color32 white = new Color32(255, 255, 255, 255);
-    public Color32 fadedWhite = new Color32(255, 255, 255, 100);
-    public Color32 almostYellow = new Color32(181, 159, 59, 255);
-    public Color32 correctGreen = new Color32(83, 141, 78, 255);
+    public Color32 defaultGray = new Color32(84, 73, 75, 255);
+    public Color32 fadedGray = new Color32(84, 73, 75, 100);
+    public Color32 white = new Color32(241, 247, 237, 255);
+    public Color32 fadedWhite = new Color32(241, 247, 237, 100);
+    public Color32 almostYellow = new Color32(227, 208, 129, 255);
+    public Color32 correctGreen = new Color32(145, 199, 177, 255);
 
     public TextMeshProUGUI letter;
 
@@ -36,12 +36,9 @@ public class LetterBox : MonoBehaviour
     {
         word = gameManager.hiddenWord;
 
-        if (gameManager.isPlaying)
+        if (gameManager.guessNum > tryNum)
         {
-            if (gameManager.guessNum > tryNum)
-            {
-                CheckGuess(letter.text);
-            }
+            CheckGuess(letter.text);
         }
     }
 

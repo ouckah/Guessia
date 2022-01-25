@@ -52,6 +52,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tryNum: 0
   slotNum: 0
+  slotImage: {fileID: 0}
+  defaultGray:
+    serializedVersion: 2
+    rgba: 4283124052
+  fadedGray:
+    serializedVersion: 2
+    rgba: 1682655572
+  white:
+    serializedVersion: 2
+    rgba: 4293785585
+  fadedWhite:
+    serializedVersion: 2
+    rgba: 1693317105
+  almostYellow:
+    serializedVersion: 2
+    rgba: 4286697699
+  correctGreen:
+    serializedVersion: 2
+    rgba: 4289841041
   letter: {fileID: 2151625119396117135}
 --- !u!1 &2151625118641092855
 GameObject:
@@ -111,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.227451, g: 0.227451, b: 0.23529413, a: 1}
+  m_Color: {r: 0.32941177, g: 0.28627452, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -202,8 +221,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293785585
+  m_fontColor: {r: 0.94509804, g: 0.96862745, b: 0.92941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

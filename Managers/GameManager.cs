@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     private GameObject keyboard;
 
     public string[] words;
-    private int wordList_LENGTH = 2500;
+    private int wordList_LENGTH = 5757;
 
     void Start()
     {
@@ -82,9 +82,8 @@ public class GameManager : MonoBehaviour
         //This will write the 1st line into the console
         Console.WriteLine(ListLines[1]);
         */
-
-        return ListLines;
         tr.Close();
+        return ListLines;
     }
 
     string[] TextAssetToList(TextAsset ta, int length)
@@ -139,6 +138,7 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
+        isPlaying = false;
         Debug.Log("You Win!");
     }
 }

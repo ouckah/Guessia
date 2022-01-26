@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public string[] words;
     private int wordList_LENGTH = 5757;
 
+    public string status;
+
     void Start()
     {
         // IF WEBGL
@@ -27,6 +29,8 @@ public class GameManager : MonoBehaviour
 
         guessNum = 0;
         guesses = new List<string>();
+
+        status = "";
 
         try
         {
@@ -54,13 +58,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        foreach (string guess in guesses)
-        {
-            if (hiddenWord.Contains(guess))
-            {
-                Win();
-            }
-        }
+        CheckStatus();
     }
 
     string[] GetLine(string fileName, int length)
@@ -133,9 +131,33 @@ public class GameManager : MonoBehaviour
         Debug.Log("NEW WORD: " + hiddenWord);
     }
 
+    void CheckStatus()
+    {
+        foreach (string guess in guesses)
+        {
+            if (hiddenWord.Contains(guess))
+            {
+                status = "Win";
+                Win();
+            }
+        }
+
+        if (guessNum == 5)
+        {
+            status = "Lose";
+            Lose();
+        }
+    }
+
     public void Win()
     {
+        // END GAME
         isPlaying = false;
         Debug.Log("You Win!");
+    }
+
+    public void Lose()
+    {
+
     }
 }

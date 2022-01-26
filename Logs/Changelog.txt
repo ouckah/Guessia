@@ -56,7 +56,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 # --------------------------------------------------------------------------------------- #
 
-## [0.0.1] - 2022-01-25
+## [0.0.2] - 2022-01-25
 ### Changed
 - Allowed for the "ENTER" input to recieve '\n' and '\r' (for macOS)
 - Fixed reading text file bug that read an extra character in Game Manager hiddenWord

@@ -63,7 +63,7 @@ public class InputHandler : MonoBehaviour
 
             // ENTER
 
-            else if (letter == '\r')
+            else if (letter == '\r' || letter == '\n')
             {
                 if (slotIndex == nodeRow.transform.childCount)
                 {
